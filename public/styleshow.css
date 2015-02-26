@@ -1,0 +1,64 @@
+@font-face {
+	font-family: "ProximaNova";
+	src: url(ProximaNovaRegular.otf);
+}
+
+body {
+	background-color: black;
+}
+
+#container {
+	background-color: black;
+    color: white;
+    font-family: "ProximaNova";
+}
+
+#header {
+	color: #648F00;
+	border-bottom: 4px #1C1C1F solid;
+	height: 120px;
+	margin-bottom: 10px;
+}
+
+#headtext {
+	font-size: 70px;
+	margin-left: -20px;
+	margin-top: 25px;
+	color: #84BD00;
+}
+
+#headtext:hover {
+	color: #648F00;
+}
+
+#logo {
+	float: left;
+	margin-left: 35px;
+	margin-top: 10px;
+	background-image: url('logo.png');
+	width: 100px;
+	height: 100px;
+}
+
+#logo:hover {
+    background-color: black;
+    opacity: 0.6;
+}
+
+#fullplay{
+	height: 600px;
+	overflow-y:scroll;
+	float: left;
+}
+
+#playlist {
+	height: 100px;
+	width: 730px;
+	list-style-type: none;
+	font-size: 30px;
+	background-color: #1C1C1F;
+	padding-top: 25px;
+	margin-left: 20px;
+	padding-left: 20px;
+	border-bottom: 2px black solid;
+}

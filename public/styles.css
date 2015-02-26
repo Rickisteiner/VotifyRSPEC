@@ -1,0 +1,132 @@
+@font-face {
+	font-family: "ProximaNova";
+	src: url(ProximaNovaRegular.otf);
+}
+
+body {
+	background-color: black;
+}
+
+#container {
+	background-color: black;
+    color: white;
+    height: 900px;
+    font-family: "ProximaNova";
+}
+
+#header {
+	color: #648F00;
+	border-bottom: 4px #1C1C1F solid;
+	height: 120px;
+}
+
+#headtext {
+	font-size: 70px;
+	margin-left: -20px;
+	margin-top: 25px;
+}
+
+#logo {
+	float: left;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+
+#userinput {
+	margin-left: 50px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	color: black;
+	font-size: 18px;
+}
+
+#artist {
+	width: 300px;
+	height: 40px;
+}
+
+#song {
+	width: 300px;
+	height: 40px;
+}
+
+#gen {
+	background-color: black;
+	margin-bottom: 20px;
+	width: 318px;
+	height: 103px;
+	float: right;
+	margin-right: 140px;
+}
+
+#gen:hover {
+    background-color: black;
+    opacity: 0.6;
+}
+
+#add {
+	margin-bottom: 5px;
+	margin-left: 8px;
+	color: #1C1C1F;
+	background-color: #648F00;
+	width: 70px;
+	height: 60px;
+}
+
+#add:hover {
+    background-color: #1C1C1F;
+    color: #648F00;
+}
+
+#fullplay{
+	height: 500px;
+	overflow:scroll;
+	float: left;
+}
+
+#playlist {
+	height: 100px;
+	width: 1200px;
+	list-style-type: none;
+	font-size: 23px;
+	background-color: #1C1C1F;
+	padding-top: 25px;
+	margin-left: 50px;
+	padding-left: 20px;
+	border-bottom: 2px black solid;
+}
+
+#name{
+	width: 612px;
+}
+
+#album {
+	width: 60px;
+	margin-top: -5px;
+	margin-left: -10px;
+}
+
+#votes {
+	font-size: 18px;
+	float: right;
+	margin-right: 10px;
+	width: 100px;
+	margin-top: -27px;
+	margin-left: 5px;
+}
+
+#button {
+	margin-left: 13px;
+	margin-top: -59px;
+	margin-right: 10px;
+	background-color: black;
+	color: #648F00;
+	width: 128px;
+	height: 60px;
+	float: right;
+}
+
+#button:hover {
+    background-color: #648F00;
+    color: #1C1C1F;
+}
