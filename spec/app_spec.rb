@@ -7,28 +7,28 @@ describe "My voting app for Spotify" do
 			get '/songs'
 			expect(last_response).to be_ok
 		end
-		it "should load the home page" do
+		it "should contain my HTML and therefore a string 'Votify'" do
 			get '/songs'
-			page.should have_content("votify")
-			#I know I am missing a piece here but not sure what.
-			#just trying to test for a string
+			expect(last_response.body).to include("Votify")
 		end
 		it "should have a playlist" do
 			expect(Playlist.all).to_not eq nil
 		end
-		it "should be creating a new artist" do
-			playlist = Playlist.create(artist:artist, track:track)
-			playlist.artist.new("Sia")
-			expect(playlist.artist).to have_attributes(artist:"Sia")
-		end
 	end
 	describe "get 'songs/play" do
 		it "should order votes by DESC" do
+		  get 'songs/play'
 		  expect(Playlist.all.order()).to be :DESC
 		  #order needs arguments.
 	    end
 	end
 	describe "POST '/songs'" do
+		it "should be creating a new artist" do
+			post '/songs', {artist: "Sia"}
+			playlist = Playlist.create(artist:artist)
+			playlist.artist.new("Sia")
+			expect(playlist.artist).to have_attributes(artist:"Sia")
+		end
 		it "check that the redirect is working." do
 			post '/songs'
 			follow_redirect!
