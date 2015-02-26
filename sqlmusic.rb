@@ -75,4 +75,4 @@ delete '/songs/:id' do
   playlist = Playlist.find(params[:id])
   playlist.delete
   redirect '/songs'
- end
+end
