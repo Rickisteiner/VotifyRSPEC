@@ -4,4 +4,4 @@ The hosted version of Votify can be found [here](https://github.com/Votefy/Proje
 
 This version includes Active Record and RSpec tests.
 
-###[Live Version](www.ricki.princesspeach.nyc/songs).
+###[Live Version](http://ricki.princesspeach.nyc/songs)
